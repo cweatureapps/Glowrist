@@ -91,6 +91,7 @@
 		5B9575D11CE8789C00C70284 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		5B9575D31CE8789C00C70284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B9575D51CE8789C00C70284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B9575E71CE87C7400C70284 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +123,11 @@
 			isa = PBXGroup;
 			children = (
 				5B9575A01CE8789B00C70284 /* Glowrist */,
-				5B9575B51CE8789C00C70284 /* GlowristTests */,
 				5B9575BF1CE8789C00C70284 /* Glowrist WatchKit App */,
 				5B9575CE1CE8789C00C70284 /* Glowrist WatchKit Extension */,
+				5B9575B51CE8789C00C70284 /* GlowristTests */,
 				5B95759F1CE8789B00C70284 /* Products */,
+				5B9575E71CE87C7400C70284 /* readme.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -503,7 +505,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "Glowrist WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.Glowrist.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.glowrist.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -517,7 +519,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = "Glowrist WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.Glowrist.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.glowrist.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -533,7 +535,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Glowrist_WatchKit_Extension;
 				INFOPLIST_FILE = "Glowrist WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.Glowrist.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.glowrist.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -549,7 +551,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Glowrist_WatchKit_Extension;
 				INFOPLIST_FILE = "Glowrist WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.Glowrist.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.glowrist.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
