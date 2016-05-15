@@ -10,12 +10,47 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Glowrist_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <imageView width="1" height="1" alignment="center" verticalAlignment="center" image="white" id="mI7-yt-Wv6">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </imageView>
+                        <group width="1" height="1" alignment="left" id="ykm-eX-9XF">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </group>
                     </items>
+                    <menu key="menu" id="EOl-Pi-MUi">
+                        <items>
+                            <menuItem title="Menu Item" icon="more" id="Bp9-az-bNI">
+                                <connections>
+                                    <action selector="showSettings" destination="AgC-eL-Hgc" id="nOd-qD-B8T"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="backgroundColorGroup" destination="ykm-eX-9XF" id="HWn-Xf-Zzb"/>
+                    </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="22" y="233"/>
+        </scene>
+        <!--settings-->
+        <scene sceneID="wON-lC-1jv">
+            <objects>
+                <controller identifier="settings" id="zQ9-Qc-nnh" customClass="SettingsInterfaceController" customModule="Glowrist_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="40" alignment="left" id="DGJ-cC-yAb">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </group>
+                        <picker height="100" alignment="left" id="sxm-dP-t7k">
+                            <connections>
+                                <action selector="pickerChanged:" destination="zQ9-Qc-nnh" id="2un-El-Qag"/>
+                            </connections>
+                        </picker>
+                    </items>
+                    <connections>
+                        <outlet property="colorPicker" destination="sxm-dP-t7k" id="7Dw-E5-Ov3"/>
+                        <outlet property="colorPreviewGroup" destination="DGJ-cC-yAb" id="JnH-KO-ZUg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="266" y="233"/>
         </scene>
     </scenes>
 </document>

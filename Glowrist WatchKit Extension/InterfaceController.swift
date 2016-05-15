@@ -12,15 +12,28 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    var settingsManager = SettingsManager()
+
+    @IBOutlet var backgroundColorGroup: WKInterfaceGroup!
+
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
-        // Configure interface objects here.
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        refreshBackground()
+    }
+
+    private func refreshBackground() {
+        let glowColor: GlowColor
+        if let savedColorString = settingsManager.getDefaultColorString() {
+            glowColor = GlowColor(rawValue: savedColorString)!
+        } else {
+            glowColor = GlowColor.white
+        }
+        backgroundColorGroup.setBackgroundColor(glowColor.uiColor)
     }
 
     override func didDeactivate() {
@@ -28,4 +41,7 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func showSettings() {
+        pushControllerWithName("settings", context: nil)
+    }
 }
