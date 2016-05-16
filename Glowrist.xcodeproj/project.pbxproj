@@ -20,7 +20,7 @@
 		5B9575D01CE8789C00C70284 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9575CF1CE8789C00C70284 /* InterfaceController.swift */; };
 		5B9575D21CE8789C00C70284 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9575D11CE8789C00C70284 /* ExtensionDelegate.swift */; };
 		5B9575D41CE8789C00C70284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B9575D31CE8789C00C70284 /* Assets.xcassets */; };
-		5B9575E91CE88DCB00C70284 /* SettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9575E81CE88DCB00C70284 /* SettingsInterfaceController.swift */; };
+		5B9575E91CE88DCB00C70284 /* ChangeColorInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9575E81CE88DCB00C70284 /* ChangeColorInterfaceController.swift */; };
 		5B9575EB1CE8971A00C70284 /* GlowColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9575EA1CE8971A00C70284 /* GlowColor.swift */; };
 		5B9575ED1CE8991400C70284 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9575EC1CE8991400C70284 /* SettingsManager.swift */; };
 /* End PBXBuildFile section */
@@ -95,7 +95,7 @@
 		5B9575D31CE8789C00C70284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B9575D51CE8789C00C70284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B9575E71CE87C7400C70284 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
-		5B9575E81CE88DCB00C70284 /* SettingsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInterfaceController.swift; sourceTree = "<group>"; };
+		5B9575E81CE88DCB00C70284 /* ChangeColorInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeColorInterfaceController.swift; sourceTree = "<group>"; };
 		5B9575EA1CE8971A00C70284 /* GlowColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlowColor.swift; sourceTree = "<group>"; };
 		5B9575EC1CE8991400C70284 /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,12 +183,12 @@
 		5B9575CE1CE8789C00C70284 /* Glowrist WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				5B9575CF1CE8789C00C70284 /* InterfaceController.swift */,
-				5B9575D11CE8789C00C70284 /* ExtensionDelegate.swift */,
 				5B9575D31CE8789C00C70284 /* Assets.xcassets */,
-				5B9575D51CE8789C00C70284 /* Info.plist */,
-				5B9575E81CE88DCB00C70284 /* SettingsInterfaceController.swift */,
+				5B9575E81CE88DCB00C70284 /* ChangeColorInterfaceController.swift */,
+				5B9575D11CE8789C00C70284 /* ExtensionDelegate.swift */,
 				5B9575EA1CE8971A00C70284 /* GlowColor.swift */,
+				5B9575D51CE8789C00C70284 /* Info.plist */,
+				5B9575CF1CE8789C00C70284 /* InterfaceController.swift */,
 				5B9575EC1CE8991400C70284 /* SettingsManager.swift */,
 			);
 			path = "Glowrist WatchKit Extension";
@@ -375,7 +375,7 @@
 			files = (
 				5B9575D21CE8789C00C70284 /* ExtensionDelegate.swift in Sources */,
 				5B9575ED1CE8991400C70284 /* SettingsManager.swift in Sources */,
-				5B9575E91CE88DCB00C70284 /* SettingsInterfaceController.swift in Sources */,
+				5B9575E91CE88DCB00C70284 /* ChangeColorInterfaceController.swift in Sources */,
 				5B9575EB1CE8971A00C70284 /* GlowColor.swift in Sources */,
 				5B9575D01CE8789C00C70284 /* InterfaceController.swift in Sources */,
 			);
@@ -466,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -505,7 +505,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -577,6 +577,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Glowrist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.glowrist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -588,6 +589,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Glowrist/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.glowrist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -637,6 +639,7 @@
 				5B9575DA1CE8789C00C70284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B9575DC1CE8789C00C70284 /* Build configuration list for PBXNativeTarget "Glowrist WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -645,6 +648,7 @@
 				5B9575DE1CE8789C00C70284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B9575E01CE8789C00C70284 /* Build configuration list for PBXNativeTarget "Glowrist" */ = {
 			isa = XCConfigurationList;
@@ -653,6 +657,7 @@
 				5B9575E21CE8789C00C70284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5B9575E31CE8789C00C70284 /* Build configuration list for PBXNativeTarget "GlowristTests" */ = {
 			isa = XCConfigurationList;
@@ -661,6 +666,7 @@
 				5B9575E51CE8789C00C70284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,7 +9,6 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController {
 
     var settingsManager = SettingsManager()
@@ -36,12 +35,7 @@ class InterfaceController: WKInterfaceController {
         backgroundColorGroup.setBackgroundColor(glowColor.uiColor)
     }
 
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
     @IBAction func showSettings() {
-        pushControllerWithName("settings", context: nil)
+        pushControllerWithName("changeColor", context: nil)
     }
 }

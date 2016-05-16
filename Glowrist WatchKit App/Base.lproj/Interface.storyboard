@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Glowrist-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Glowrist_WatchKit_App" customModuleProvider="target">
+                <controller title="Glowrist" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Glowrist_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group width="1" height="1" alignment="left" id="ykm-eX-9XF">
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -16,7 +16,7 @@
                     </items>
                     <menu key="menu" id="EOl-Pi-MUi">
                         <items>
-                            <menuItem title="Menu Item" icon="more" id="Bp9-az-bNI">
+                            <menuItem title="Change color" icon="more" id="Bp9-az-bNI">
                                 <connections>
                                     <action selector="showSettings" destination="AgC-eL-Hgc" id="nOd-qD-B8T"/>
                                 </connections>
@@ -30,21 +30,33 @@
             </objects>
             <point key="canvasLocation" x="22" y="233"/>
         </scene>
-        <!--settings-->
+        <!--Color-->
         <scene sceneID="wON-lC-1jv">
             <objects>
-                <controller identifier="settings" id="zQ9-Qc-nnh" customClass="SettingsInterfaceController" customModule="Glowrist_WatchKit_Extension">
+                <controller identifier="changeColor" title="Color" id="zQ9-Qc-nnh" customClass="ChangeColorInterfaceController" customModule="Glowrist_WatchKit_Extension">
                     <items>
-                        <group width="1" height="40" alignment="left" id="DGJ-cC-yAb">
+                        <group width="1" height="0.14999999999999999" alignment="left" id="dEQ-Gd-Omp">
+                            <items>
+                                <label alignment="left" verticalAlignment="bottom" text="Color" id="80K-zC-7CO">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="4" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group width="1" height="0.84999999999999998" alignment="left" id="DGJ-cC-yAb">
+                            <items>
+                                <group width="500" height="20" alignment="left" id="wvz-py-5rM"/>
+                                <picker height="100" alignment="left" alpha="0.10000000000000001" id="sxm-dP-t7k">
+                                    <connections>
+                                        <action selector="pickerChanged:" destination="zQ9-Qc-nnh" id="2un-El-Qag"/>
+                                    </connections>
+                                </picker>
+                            </items>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </group>
-                        <picker height="100" alignment="left" id="sxm-dP-t7k">
-                            <connections>
-                                <action selector="pickerChanged:" destination="zQ9-Qc-nnh" id="2un-El-Qag"/>
-                            </connections>
-                        </picker>
                     </items>
                     <connections>
+                        <outlet property="colorLabel" destination="80K-zC-7CO" id="CMU-te-aYq"/>
                         <outlet property="colorPicker" destination="sxm-dP-t7k" id="7Dw-E5-Ov3"/>
                         <outlet property="colorPreviewGroup" destination="DGJ-cC-yAb" id="JnH-KO-ZUg"/>
                     </connections>

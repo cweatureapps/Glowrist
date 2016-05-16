@@ -1,5 +1,5 @@
 //
-//  SettingsInterfaceController.swift
+//  ChangeColorInterfaceController.swift
 //  Glowrist
 //
 //  Created by Ken Ko on 15/05/2016.
@@ -9,13 +9,13 @@
 import WatchKit
 import Foundation
 
-
-class SettingsInterfaceController: WKInterfaceController {
+class ChangeColorInterfaceController: WKInterfaceController {
 
     private var settingsManager = SettingsManager()
 
     @IBOutlet var colorPreviewGroup: WKInterfaceGroup!
     @IBOutlet var colorPicker: WKInterfacePicker!
+    @IBOutlet var colorLabel: WKInterfaceLabel!
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -25,6 +25,8 @@ class SettingsInterfaceController: WKInterfaceController {
         } else {
             glowColor = GlowColor.white
         }
+        colorLabel.setText(glowColor.rawValue)
+        colorLabel.setTextColor(glowColor.uiColor)
         colorPreviewGroup.setBackgroundColor(glowColor.uiColor)
         setupPicker(selectedColor: glowColor)
     }
@@ -46,18 +48,9 @@ class SettingsInterfaceController: WKInterfaceController {
 
     @IBAction func pickerChanged(value: Int) {
         let glowColor = GlowColor(rawValue: GlowColor.all[value])!
+        colorLabel.setText(glowColor.rawValue)
+        colorLabel.setTextColor(glowColor.uiColor)
         colorPreviewGroup.setBackgroundColor(glowColor.uiColor)
         settingsManager.saveDefaultColorString(glowColor.rawValue)
     }
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
 }
