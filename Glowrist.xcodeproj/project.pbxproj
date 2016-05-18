@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B5880D01CE9F0FC003B5699 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5880CF1CE9F0FC003B5699 /* ComplicationController.swift */; };
 		5B9575A21CE8789B00C70284 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9575A11CE8789B00C70284 /* AppDelegate.swift */; };
 		5B9575A41CE8789B00C70284 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9575A31CE8789B00C70284 /* ViewController.swift */; };
 		5B9575A71CE8789C00C70284 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9575A51CE8789C00C70284 /* Main.storyboard */; };
@@ -75,6 +76,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B5880CF1CE9F0FC003B5699 /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		5B95759E1CE8789B00C70284 /* Glowrist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glowrist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9575A11CE8789B00C70284 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B9575A31CE8789B00C70284 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				5B9575D51CE8789C00C70284 /* Info.plist */,
 				5B9575CF1CE8789C00C70284 /* InterfaceController.swift */,
 				5B9575EC1CE8991400C70284 /* SettingsManager.swift */,
+				5B5880CF1CE9F0FC003B5699 /* ComplicationController.swift */,
 			);
 			path = "Glowrist WatchKit Extension";
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				5B9575E91CE88DCB00C70284 /* ChangeColorInterfaceController.swift in Sources */,
 				5B9575EB1CE8971A00C70284 /* GlowColor.swift in Sources */,
 				5B9575D01CE8789C00C70284 /* InterfaceController.swift in Sources */,
+				5B5880D01CE9F0FC003B5699 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
