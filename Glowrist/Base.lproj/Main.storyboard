@@ -1,25 +1,497 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="e2X-Ct-aLt">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Info-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Glowrist" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientBg" translatesAutoresizingMaskIntoConstraints="NO" id="XsN-dx-PUY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sba-Q3-1TI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZSI-wP-FdR" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1866"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="in-app-image" translatesAutoresizingMaskIntoConstraints="NO" id="yL2-LQ-hOm">
+                                                <rect key="frame" x="96" y="48" width="128" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="yL2-LQ-hOm" secondAttribute="height" multiplier="1:1" id="k4B-jd-yXG"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnO-Hk-Zlo">
+                                                <rect key="frame" x="24" y="200" width="272" height="368"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Overview">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.43529411764705883" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="24" name="HelveticaNeue-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="24" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Trying to find your phone in the dark? Looking for the right key at night, or having trouble putting in your key? Can't plug in that charger in the dark? A quick glow from your wrist is enough to get the job done!
+
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Features
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.43529411764705883" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">
+● Bright full screen glow from your watch to help you quickly find something in the dark
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">● 1 tap launch - Complication icon to start the glow straight from the watch face
+● Your choice of glow colors that match your watch face colors
+
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">Screenshots
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.43529411764705883" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                                <string key="userLabel">Overview Trying to find your phone in the dark? Looking for the right key at night, or having trouble finding the keyhole? Can't plug in that charger in the dark? A quick glow from your wrist is enough to get the job done!</string>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen-modular" translatesAutoresizingMaskIntoConstraints="NO" id="zFK-EM-21H">
+                                                <rect key="frame" x="80" y="567" width="160" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zFK-EM-21H" secondAttribute="height" multiplier="272:340" id="IEv-I3-k4x"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen-color" translatesAutoresizingMaskIntoConstraints="NO" id="sjQ-H5-giC">
+                                                <rect key="frame" x="80" y="775" width="160" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="sjQ-H5-giC" secondAttribute="height" multiplier="272:340" id="FuB-zJ-1du"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen-utility" translatesAutoresizingMaskIntoConstraints="NO" id="ud6-Mf-Aed">
+                                                <rect key="frame" x="80" y="983" width="160" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ud6-Mf-Aed" secondAttribute="height" multiplier="272:340" id="mcV-zy-vrH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen-white" translatesAutoresizingMaskIntoConstraints="NO" id="95W-EX-go8">
+                                                <rect key="frame" x="80" y="1191" width="160" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="95W-EX-go8" secondAttribute="height" multiplier="272:340" id="dBD-cT-Ye9"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen-menu" translatesAutoresizingMaskIntoConstraints="NO" id="ieU-mY-eSx">
+                                                <rect key="frame" x="80" y="1399" width="160" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ieU-mY-eSx" secondAttribute="height" multiplier="272:340" id="ySW-ym-D63"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screen-color-selection" translatesAutoresizingMaskIntoConstraints="NO" id="HAZ-9N-sJF">
+                                                <rect key="frame" x="80" y="1607" width="160" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="HAZ-9N-sJF" secondAttribute="height" multiplier="272:340" id="hFu-Rm-Ahc"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dl-HW-8CP">
+                                                <rect key="frame" x="104" y="1815" width="113" height="26"/>
+                                                <string key="text">Glowrist 1.0.0
+© 2016 CweatureApps</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                                <color key="textColor" red="0.43529411759999997" green="0.69803921570000005" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="ud6-Mf-Aed" firstAttribute="centerX" secondItem="ZSI-wP-FdR" secondAttribute="centerX" id="07c-7P-3eY"/>
+                                            <constraint firstItem="yL2-LQ-hOm" firstAttribute="top" secondItem="ZSI-wP-FdR" secondAttribute="top" constant="48" id="2hx-wU-8ZD"/>
+                                            <constraint firstItem="2Dl-HW-8CP" firstAttribute="top" secondItem="HAZ-9N-sJF" secondAttribute="bottom" constant="8" id="5iy-OP-arj"/>
+                                            <constraint firstItem="sjQ-H5-giC" firstAttribute="top" secondItem="zFK-EM-21H" secondAttribute="bottom" constant="8" id="7tN-h2-Ht0"/>
+                                            <constraint firstAttribute="bottom" secondItem="2Dl-HW-8CP" secondAttribute="bottom" constant="24" id="9UP-yO-Y9n"/>
+                                            <constraint firstItem="ieU-mY-eSx" firstAttribute="top" secondItem="95W-EX-go8" secondAttribute="bottom" constant="8" id="A1K-ej-b6S"/>
+                                            <constraint firstItem="zFK-EM-21H" firstAttribute="top" secondItem="OnO-Hk-Zlo" secondAttribute="bottom" id="L6D-TF-Ehx"/>
+                                            <constraint firstItem="yL2-LQ-hOm" firstAttribute="centerX" secondItem="ZSI-wP-FdR" secondAttribute="centerX" id="WmQ-MZ-RnG"/>
+                                            <constraint firstItem="zFK-EM-21H" firstAttribute="centerX" secondItem="ZSI-wP-FdR" secondAttribute="centerX" id="WwZ-1W-Fqm"/>
+                                            <constraint firstItem="95W-EX-go8" firstAttribute="centerX" secondItem="ZSI-wP-FdR" secondAttribute="centerX" id="XZs-0j-YhP"/>
+                                            <constraint firstItem="sjQ-H5-giC" firstAttribute="centerX" secondItem="ZSI-wP-FdR" secondAttribute="centerX" id="Z2j-6C-1bu"/>
+                                            <constraint firstItem="HAZ-9N-sJF" firstAttribute="top" secondItem="ieU-mY-eSx" secondAttribute="bottom" constant="8" id="aJp-Yd-Ha9"/>
+                                            <constraint firstItem="95W-EX-go8" firstAttribute="top" secondItem="ud6-Mf-Aed" secondAttribute="bottom" constant="8" id="cle-R4-4Wx"/>
+                                            <constraint firstItem="OnO-Hk-Zlo" firstAttribute="top" secondItem="yL2-LQ-hOm" secondAttribute="bottom" constant="24" id="gLL-Tp-sb7"/>
+                                            <constraint firstItem="HAZ-9N-sJF" firstAttribute="centerX" secondItem="ZSI-wP-FdR" secondAttribute="centerX" id="gLi-c1-o4a"/>
+                                            <constraint firstAttribute="trailing" secondItem="OnO-Hk-Zlo" secondAttribute="trailing" constant="24" id="iKh-ea-X9M"/>
+                                            <constraint firstItem="2Dl-HW-8CP" firstAttribute="centerX" secondItem="ZSI-wP-FdR" secondAttribute="centerX" id="pBb-3F-0EC"/>
+                                            <constraint firstItem="ud6-Mf-Aed" firstAttribute="top" secondItem="sjQ-H5-giC" secondAttribute="bottom" constant="8" id="sXA-qo-Cng"/>
+                                            <constraint firstItem="OnO-Hk-Zlo" firstAttribute="leading" secondItem="ZSI-wP-FdR" secondAttribute="leading" constant="24" id="vgy-VQ-NfV"/>
+                                            <constraint firstItem="ieU-mY-eSx" firstAttribute="centerX" secondItem="ZSI-wP-FdR" secondAttribute="centerX" id="w7y-e5-LBT"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ZSI-wP-FdR" firstAttribute="top" secondItem="sba-Q3-1TI" secondAttribute="top" id="Ih1-La-YE9"/>
+                                    <constraint firstItem="ZSI-wP-FdR" firstAttribute="leading" secondItem="sba-Q3-1TI" secondAttribute="leading" id="UDB-oS-Ek6"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZSI-wP-FdR" secondAttribute="bottom" id="cra-AV-2tf"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZSI-wP-FdR" secondAttribute="trailing" id="qtk-ST-fj2"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HAZ-9N-sJF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="1Wf-Du-gib"/>
+                            <constraint firstAttribute="trailing" secondItem="XsN-dx-PUY" secondAttribute="trailing" id="3nz-4G-vJa"/>
+                            <constraint firstItem="zFK-EM-21H" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="4Pd-zZ-uha"/>
+                            <constraint firstItem="95W-EX-go8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="9yl-pj-9fJ"/>
+                            <constraint firstItem="ieU-mY-eSx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="O81-Un-cv5"/>
+                            <constraint firstItem="sba-Q3-1TI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OPR-Rs-Ela"/>
+                            <constraint firstItem="sjQ-H5-giC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="P3M-Kt-wUc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sba-Q3-1TI" secondAttribute="bottom" id="XlG-rC-YMe"/>
+                            <constraint firstItem="ud6-Mf-Aed" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="YDU-5G-aB8"/>
+                            <constraint firstItem="sba-Q3-1TI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="csi-qb-SCX"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="XsN-dx-PUY" secondAttribute="bottom" id="eY0-xe-fqB"/>
+                            <constraint firstItem="yL2-LQ-hOm" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="ggq-SC-Ob8"/>
+                            <constraint firstItem="XsN-dx-PUY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mjk-zP-dwj"/>
+                            <constraint firstAttribute="trailing" secondItem="sba-Q3-1TI" secondAttribute="trailing" id="nKV-2B-7BX"/>
+                            <constraint firstItem="XsN-dx-PUY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="nNW-cZ-ff2"/>
+                            <constraint firstItem="ZSI-wP-FdR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="yT8-Uz-Sih"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Info" image="Info" id="I6W-xR-Tzo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-118" y="883"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="itL-VN-oki">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="e2X-Ct-aLt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="aym-48-osN">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.43529411764705883" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.43529411764705883" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="UPL-pt-Iro"/>
+                        <segue destination="itn-Ji-kKL" kind="relationship" relationship="viewControllers" id="0Bz-Wp-sF4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jgx-ZE-yhL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="75"/>
+        </scene>
+        <!--FAQ-->
+        <scene sceneID="Dgt-JD-yhH">
+            <objects>
+                <viewController id="itn-Ji-kKL" customClass="FAQViewController" customModule="Glowrist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fI2-ZK-Wch"/>
+                        <viewControllerLayoutGuide type="bottom" id="y0p-dQ-sLd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gDF-L1-zhS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradientBg" translatesAutoresizingMaskIntoConstraints="NO" id="7a1-54-6ww">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzJ-qi-iA7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckd-5S-HC5" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="674"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJs-ge-oVk">
+                                                <rect key="frame" x="24" y="40" width="272" height="29"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="FAQ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.43529411764705883" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="24" name="HelveticaNeue-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="24" name="HelveticaNeue-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqy-iz-USt">
+                                                <rect key="frame" x="24" y="191" width="272" height="459"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="How do I change the glow ">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.43529411764705883" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue-Italic"/>
+                                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Italic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="colour">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.43529411764705883" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue-Italic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="?">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.43529411764705883" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue-Italic"/>
+                                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Italic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">
+When the watch app is open, force touch to open up the option to change colour. Use the digital crown to pick your preferred colour
+
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Can I make the glow brighter?">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.43529411764705883" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue-Italic"/>
+                                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Italic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">
+For the brightest glow, use white as the colour. You can also adjust your watch brightness to maximum, although the medium brightness setting should provide sufficient light. Apple does not give developers access to brightness settings. 
+
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="Can I stop the watch screen from going to sleep when I tilt the watch downwards?">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.43529411764705883" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue-Italic"/>
+                                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Italic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">
+Unfortunately not. In order to save power, Apple does not give developers access to keep the screen on. The workaround is that if the screen turns off while Glowrist is running, just press the digital crown once, and it should return to the Glowrist screen. Remember, is this NOT a torch or flashlight... just a quick few seconds of glow is enough to help you find something in the dark!</string>
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name=".AppleSystemUIFont"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                                <string key="userLabel">Overview Trying to find your phone in the dark? Looking for the right key at night, or having trouble finding the keyhole? Can't plug in that charger in the dark? A quick glow from your wrist is enough to get the job done!</string>
+                                            </label>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWU-W6-xRe">
+                                                <rect key="frame" x="24" y="85" width="272" height="98"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="How do I add the complication icon to the watch face?">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.43529411764705883" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue-Italic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue-Italic"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">See Apple support documentation:
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment>
+                                                        <string key="content">https://support.apple.com/en-au/HT205536
+</string>
+                                                        <attributes>
+                                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops/>
+                                                            </paragraphStyle>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="6Zd-4V-OBZ" appends="YES" id="qrJ-cC-cxo"/>
+                                                </connections>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="nWU-W6-xRe" firstAttribute="top" secondItem="xJs-ge-oVk" secondAttribute="bottom" constant="16" id="CCV-7y-KSd"/>
+                                            <constraint firstAttribute="bottom" secondItem="sqy-iz-USt" secondAttribute="bottom" constant="24" id="Dzv-E3-9jp"/>
+                                            <constraint firstItem="xJs-ge-oVk" firstAttribute="top" secondItem="ckd-5S-HC5" secondAttribute="top" constant="40" id="FIs-Ih-dbm"/>
+                                            <constraint firstAttribute="trailing" secondItem="sqy-iz-USt" secondAttribute="trailing" constant="24" id="PI8-Fk-wZo"/>
+                                            <constraint firstItem="xJs-ge-oVk" firstAttribute="leading" secondItem="ckd-5S-HC5" secondAttribute="leading" constant="24" id="R2C-I9-uHw"/>
+                                            <constraint firstItem="sqy-iz-USt" firstAttribute="top" secondItem="nWU-W6-xRe" secondAttribute="bottom" constant="8" id="a8i-NP-bfb"/>
+                                            <constraint firstAttribute="trailing" secondItem="xJs-ge-oVk" secondAttribute="trailing" constant="24" id="fvz-k0-pSb"/>
+                                            <constraint firstItem="nWU-W6-xRe" firstAttribute="leading" secondItem="ckd-5S-HC5" secondAttribute="leading" constant="24" id="pIU-JR-Pql"/>
+                                            <constraint firstAttribute="trailing" secondItem="nWU-W6-xRe" secondAttribute="trailing" constant="24" id="uWI-n4-Pvr"/>
+                                            <constraint firstItem="sqy-iz-USt" firstAttribute="leading" secondItem="ckd-5S-HC5" secondAttribute="leading" constant="24" id="xHD-OV-MUi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ckd-5S-HC5" firstAttribute="leading" secondItem="IzJ-qi-iA7" secondAttribute="leading" id="2aH-ac-9Op"/>
+                                    <constraint firstAttribute="bottom" secondItem="ckd-5S-HC5" secondAttribute="bottom" id="5sX-BU-Bzx"/>
+                                    <constraint firstAttribute="trailing" secondItem="ckd-5S-HC5" secondAttribute="trailing" id="hqo-rr-MuE"/>
+                                    <constraint firstItem="ckd-5S-HC5" firstAttribute="top" secondItem="IzJ-qi-iA7" secondAttribute="top" id="uwH-yO-8sU"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ckd-5S-HC5" firstAttribute="width" secondItem="gDF-L1-zhS" secondAttribute="width" id="2og-Hj-TDl"/>
+                            <constraint firstItem="7a1-54-6ww" firstAttribute="top" secondItem="gDF-L1-zhS" secondAttribute="topMargin" id="3IE-Jb-49P"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="7a1-54-6ww" secondAttribute="bottom" id="7em-0E-0BK"/>
+                            <constraint firstAttribute="trailing" secondItem="IzJ-qi-iA7" secondAttribute="trailing" id="Iwq-Ea-4cl"/>
+                            <constraint firstAttribute="trailing" secondItem="7a1-54-6ww" secondAttribute="trailing" id="N4D-1T-r2a"/>
+                            <constraint firstItem="7a1-54-6ww" firstAttribute="leading" secondItem="gDF-L1-zhS" secondAttribute="leading" id="ULN-YO-OXR"/>
+                            <constraint firstItem="IzJ-qi-iA7" firstAttribute="leading" secondItem="gDF-L1-zhS" secondAttribute="leading" id="b3B-gN-Vil"/>
+                            <constraint firstItem="y0p-dQ-sLd" firstAttribute="top" secondItem="IzJ-qi-iA7" secondAttribute="bottom" id="jlG-V8-tgi"/>
+                            <constraint firstItem="IzJ-qi-iA7" firstAttribute="top" secondItem="gDF-L1-zhS" secondAttribute="top" id="zMO-JX-LLJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="FAQ" image="Question" id="bli-E3-m9u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GhS-jU-vDM" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6Zd-4V-OBZ">
+                    <connections>
+                        <action selector="appleSupportTapped:" destination="itn-Ji-kKL" id="izr-3a-E58"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="386" y="883"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Info" width="25" height="25"/>
+        <image name="Question" width="25" height="25"/>
+        <image name="gradientBg" width="1" height="600"/>
+        <image name="in-app-image" width="512" height="512"/>
+        <image name="screen-color" width="272" height="340"/>
+        <image name="screen-color-selection" width="272" height="340"/>
+        <image name="screen-menu" width="272" height="340"/>
+        <image name="screen-modular" width="272" height="340"/>
+        <image name="screen-utility" width="272" height="340"/>
+        <image name="screen-white" width="272" height="340"/>
+    </resources>
 </document>

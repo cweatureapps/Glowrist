@@ -24,6 +24,7 @@
 		5B9575E91CE88DCB00C70284 /* ChangeColorInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9575E81CE88DCB00C70284 /* ChangeColorInterfaceController.swift */; };
 		5B9575EB1CE8971A00C70284 /* GlowColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9575EA1CE8971A00C70284 /* GlowColor.swift */; };
 		5B9575ED1CE8991400C70284 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9575EC1CE8991400C70284 /* SettingsManager.swift */; };
+		5B9877E01CF3158E004A2613 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9877DF1CF3158E004A2613 /* FAQViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		5B9575E81CE88DCB00C70284 /* ChangeColorInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeColorInterfaceController.swift; sourceTree = "<group>"; };
 		5B9575EA1CE8971A00C70284 /* GlowColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlowColor.swift; sourceTree = "<group>"; };
 		5B9575EC1CE8991400C70284 /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		5B9877DF1CF3158E004A2613 /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				5B9575A81CE8789C00C70284 /* Assets.xcassets */,
 				5B9575AA1CE8789C00C70284 /* LaunchScreen.storyboard */,
 				5B9575AD1CE8789C00C70284 /* Info.plist */,
+				5B9877DF1CF3158E004A2613 /* FAQViewController.swift */,
 			);
 			path = Glowrist;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9877E01CF3158E004A2613 /* FAQViewController.swift in Sources */,
 				5B9575A41CE8789B00C70284 /* ViewController.swift in Sources */,
 				5B9575A21CE8789B00C70284 /* AppDelegate.swift in Sources */,
 			);
