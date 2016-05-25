@@ -102,6 +102,9 @@
 		5B9575EA1CE8971A00C70284 /* GlowColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlowColor.swift; sourceTree = "<group>"; };
 		5B9575EC1CE8991400C70284 /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		5B9877DF1CF3158E004A2613 /* FAQViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		5BF7029D1CF3430500AF50E2 /* Glowrist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Glowrist.entitlements; sourceTree = "<group>"; };
+		5BF7029E1CF3459C00AF50E2 /* Glowrist WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Glowrist WatchKit App.entitlements"; sourceTree = "<group>"; };
+		5BF7029F1CF3597600AF50E2 /* Glowrist WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Glowrist WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,7 @@
 		5B9575A01CE8789B00C70284 /* Glowrist */ = {
 			isa = PBXGroup;
 			children = (
+				5BF7029D1CF3430500AF50E2 /* Glowrist.entitlements */,
 				5B9575A11CE8789B00C70284 /* AppDelegate.swift */,
 				5B9575A31CE8789B00C70284 /* ViewController.swift */,
 				5B9575A51CE8789C00C70284 /* Main.storyboard */,
@@ -178,6 +182,7 @@
 		5B9575BF1CE8789C00C70284 /* Glowrist WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				5BF7029E1CF3459C00AF50E2 /* Glowrist WatchKit App.entitlements */,
 				5B9575C01CE8789C00C70284 /* Interface.storyboard */,
 				5B9575C31CE8789C00C70284 /* Assets.xcassets */,
 				5B9575C51CE8789C00C70284 /* Info.plist */,
@@ -188,6 +193,7 @@
 		5B9575CE1CE8789C00C70284 /* Glowrist WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5BF7029F1CF3597600AF50E2 /* Glowrist WatchKit Extension.entitlements */,
 				5B9575D31CE8789C00C70284 /* Assets.xcassets */,
 				5B9575E81CE88DCB00C70284 /* ChangeColorInterfaceController.swift */,
 				5B9575D11CE8789C00C70284 /* ExtensionDelegate.swift */,
@@ -286,6 +292,12 @@
 				TargetAttributes = {
 					5B95759D1CE8789B00C70284 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = J653NKMPDP;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					5B9575B11CE8789C00C70284 = {
 						CreatedOnToolsVersion = 7.3;
@@ -293,9 +305,21 @@
 					};
 					5B9575BA1CE8789C00C70284 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = J653NKMPDP;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					5B9575C91CE8789C00C70284 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = J653NKMPDP;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -455,7 +479,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -477,6 +501,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -500,7 +525,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -515,6 +540,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -523,10 +549,13 @@
 		5B9575D91CE8789C00C70284 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Glowrist WatchKit Extension/Glowrist WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ken Ko (J653NKMPDP)";
 				INFOPLIST_FILE = "Glowrist WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.glowrist.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "ceff2f79-74e2-4955-ac5f-8e91f25d3a5e";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -537,10 +566,13 @@
 		5B9575DA1CE8789C00C70284 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Glowrist WatchKit Extension/Glowrist WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ken Ko (J653NKMPDP)";
 				INFOPLIST_FILE = "Glowrist WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.glowrist.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "ceff2f79-74e2-4955-ac5f-8e91f25d3a5e";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -552,11 +584,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Glowrist WatchKit App/Glowrist WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ken Ko (J653NKMPDP)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Glowrist_WatchKit_Extension;
 				INFOPLIST_FILE = "Glowrist WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.glowrist.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "52806ae0-f5ed-4c8d-b37f-453e3883c0b3";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -568,11 +603,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Glowrist WatchKit App/Glowrist WatchKit App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ken Ko (J653NKMPDP)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = Glowrist_WatchKit_Extension;
 				INFOPLIST_FILE = "Glowrist WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.glowrist.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "52806ae0-f5ed-4c8d-b37f-453e3883c0b3";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -584,11 +622,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Glowrist/Glowrist.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ken Ko (J653NKMPDP)";
 				INFOPLIST_FILE = Glowrist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.glowrist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "15773ff9-725d-411b-b8a9-1ed1d7faa59b";
 			};
 			name = Debug;
 		};
@@ -596,11 +637,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Glowrist/Glowrist.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ken Ko (J653NKMPDP)";
 				INFOPLIST_FILE = Glowrist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cweatureapps.glowrist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "15773ff9-725d-411b-b8a9-1ed1d7faa59b";
 			};
 			name = Release;
 		};
